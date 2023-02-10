@@ -1,0 +1,62 @@
+/* :root {
+	--primary: #dc6601;
+	--bg: #fffff0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	background-color: var(--bg);
+	color: #010101;
+} */
+
+/* Navbar */
+/* .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.4rem 7%;
+	background-color: var(--bg);
+	border-bottom: 1px solid #f0eeee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	justify-content: flex-end;
+}
+
+.navbar .navbar-nav a {
+	color: #010101;
+	display: inline-block;
+	font-size: 1.3rem;
+	margin: 0.1rem;
+}
+
+.navbar .navbar-nav a:hover {
+	color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+	content: "";
+	display: block;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.1rem solid var(--primary);
+	transform: scaleX(0);
+	transition: 0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+	transform: scaleX(0.5);
+} */
+
+/* Media Queries */
