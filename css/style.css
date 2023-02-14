@@ -1,62 +1,39 @@
-/* :root {
-	--primary: #dc6601;
-	--bg: #fffff0;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	outline: none;
-	border: none;
-	text-decoration: none;
-}
-
-body {
-	font-family: "Poppins", sans-serif;
-	font-weight: 400;
-	background-color: var(--bg);
-	color: #010101;
-} */
-
-/* Navbar */
-/* .navbar {
+.circle-icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #f2f3f5;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	padding: 1.4rem 7%;
-	background-color: var(--bg);
-	border-bottom: 1px solid #f0eeee;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 9999;
-	justify-content: flex-end;
 }
 
-.navbar .navbar-nav a {
-	color: #010101;
-	display: inline-block;
-	font-size: 1.3rem;
-	margin: 0.1rem;
+#hero {
+	height: 100vh;
+	display: flex;
+	align-items: center;
 }
 
-.navbar .navbar-nav a:hover {
-	color: var(--primary);
+/* Desktops and laptops */
+@media (min-width: 1024px) {
+	/* #hero {
+		margin-left: 80px;
+	}
+	#portfolios {
+		margin-left: 80px;
+	} */
 }
 
-.navbar .navbar-nav a::after {
-	content: "";
-	display: block;
-	padding-bottom: 0.5rem;
-	border-bottom: 0.1rem solid var(--primary);
-	transform: scaleX(0);
-	transition: 0.3s linear;
+/* Tablets and smaller laptops */
+@media (min-width: 768px) and (max-width: 1023px) {
+	/* #hero {
+		margin-left: 60px;
+	}
+	#portfolios {
+		margin-left: 60px;
+	} */
 }
 
-.navbar .navbar-nav a:hover::after {
-	transform: scaleX(0.5);
-} */
-
-/* Media Queries */
+/* Mobile phones and small tablets */
+@media (max-width: 767px) {
+}
