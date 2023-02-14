@@ -1,3 +1,29 @@
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.big-heading {
+	font-weight: 600;
+	font-size: clamp(30px, 8vw, 70px);
+	color: #45505b;
+}
+
+.sub-heading-1 {
+	font-size: clamp(24px, 8vw, 60px);
+	color: #45505b;
+}
+
+.sub-heading-2 {
+	font-size: clamp(24px, 8vw, 60px);
+	color: #0563bb;
+}
+
+.paragraph {
+	color: #272829;
+	font-size: 18px;
+	line-height: 1.8;
+}
+
 .circle-icon {
 	width: 50px;
 	height: 50px;
@@ -8,7 +34,8 @@
 	align-items: center;
 }
 
-#hero {
+#hero,
+#about {
 	height: 100vh;
 	display: flex;
 	align-items: center;
