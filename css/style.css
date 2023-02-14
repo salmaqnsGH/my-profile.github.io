@@ -34,21 +34,14 @@ body {
 	align-items: center;
 }
 
-#hero,
-#about {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-}
-
 /* Desktops and laptops */
 @media (min-width: 1024px) {
-	/* #hero {
-		margin-left: 80px;
+	#hero,
+	#about {
+		height: 100vh;
+		display: flex;
+		align-items: center;
 	}
-	#portfolios {
-		margin-left: 80px;
-	} */
 }
 
 /* Tablets and smaller laptops */
