@@ -34,7 +34,7 @@
 						<i id="Home" class="feather nav-home" data-feather="home"></i>
 					</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a
 						href="#about"
 						class="circle-icon mt-4"
@@ -43,7 +43,7 @@
 						onmouseout="hoverOut(this)">
 						<i id="About" class="feather nav-about" data-feather="user"></i>
 					</a>
-				</li>
+				</li> -->
 				<li>
 					<a
 						href="#portfolios"
@@ -127,59 +127,54 @@
 			<h2 id="portfolios" class="pb-2 border-bottom">Portfolios</h2>
 
 			<div class="row my-3">
-				<div class="col-sm-6 mb-3 mb-sm-0 text-bg-dark rounded-4 shadow-lg">
-					<img src="nodejs.png" alt="nodejs.png" width="100%" />
+				<div class="col-sm-6 mb-3 mb-sm-0 text-bg-dark rounded-4 shadow-lg" style="background-image: url('dts.png');background-size: cover;
+				background-position: center center;">
 				</div>
 				<div class="col-sm-6">
 					<div class="px-5">
-						<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Topup Game Admin Web App & API</h3>
+						<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">MyGram API</h3>
 						<p>
-							Backend project supports a top-up game app and its admin dashboard. It integrates with MongoDB to store
-							user and game data
+							As my final project for DTS Kominfo FGA, I developed an Instagram clone API that enables users to upload photos and comment on other users' photos. The tech stack I used includes Go, PostgreSQL, Gin Gonic, and Gorm ORM.
 						</p>
 						<ul class="d-flex list-unstyled mt-auto">
 							<li class="me-auto">
-								<a href="" class="btn btn-sm btn-primary"><i data-feather="eye" style="color: #f2f3f5"></i> Demo</a>
-							</li>
-							<li class="d-flex align-items-center">
 								<a
-									href="https://github.com/salmaqnsGH/topup-game-be"
-									style="margin-left: 10px; text-decoration: none; font-weight: 600">
-									<i data-feather="github" style="color: #45505b" width="32px" height="32px"></i>
+								type="button" class="btn btn-outline-secondary"
+									href="https://github.com/salmaqnsGH/my-gram"
+									style="text-decoration: none; font-weight: 600; ">
+									<i data-feather="github"  width="32px" height="32px"></i> Docs
 								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-
 			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
 				<div class="col">
-					<div
-						class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-						style="background-image: url('cover-11.png')">
-						<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Topup Game Admin Web App & API</h3>
+					<div class="card">
+						<div class="card-header">
+							<h4>
+								Topup Game Admin App & API
+							</h4>
+						</div>
+						<div class="card-body">
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<img src="nodejs.png" alt="nodejs.png" class="img-thumbnail" width="13%" />
+									<img src="mongodb.png" alt="mongodb.png" class="img-thumbnail" width="24%" />
+								</li>
+							</ul>
 							<p>
 								Backend project supports a top-up game app and its admin dashboard. It integrates with MongoDB to store
 								user and game data
 							</p>
 							<ul class="d-flex list-unstyled mt-auto">
 								<li class="me-auto">
-									<img src="nodejs.png" alt="nodejs.png" class="img-thumbnail" width="14%" />
-									<img src="mongodb.png" alt="mongodb.png" class="img-thumbnail" width="24%" />
-								</li>
-							</ul>
-
-							<ul class="d-flex list-unstyled mt-auto">
-								<li class="me-auto">
-									<a href="" class="btn btn-sm btn-primary"><i data-feather="eye" style="color: #f2f3f5"></i> Demo</a>
-								</li>
-								<li class="d-flex align-items-center">
 									<a
+									type="button" class="btn btn-sm btn-primary"
 										href="https://github.com/salmaqnsGH/topup-game-be"
-										style="margin-left: 10px; text-decoration: none; font-weight: 600">
-										<i data-feather="github" style="color: #f2f3f5" width="32px" height="32px"></i>
+										style="text-decoration: none; font-weight: 600; ">
+										<i data-feather="eye" ></i> Docs
 									</a>
 								</li>
 							</ul>
@@ -187,72 +182,58 @@
 					</div>
 				</div>
 				<div class="col">
-					<div
-						class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-						style="background-image: url('cover-11.png')">
-						<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Crowdfunding App API</h3>
+					<div class="card mx-2">
+						<div class="card-header">
+						<h4>Crowdfunding App API</h4>
+						</div>
+						<div class="card-body">
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<img src="golang.png" alt="golang.png" class="img-thumbnail" width="10%" />
+									<img src="postgres.png" alt="postgres.png" class="img-thumbnail" width="16%" />
+								</li>
+							</ul>
 							<p>
 								A Crowdfunding App built with Golang and Postgres, featuring a robust REST API and secure payment
 								gateway powered by Midtrans. Ideal for creating and managing successful fundraising campaigns
 							</p>
 							<ul class="d-flex list-unstyled mt-auto">
 								<li class="me-auto">
-									<img src="golang.png" alt="golang.png" class="img-thumbnail" width="12%" />
-									<img src="postgres.png" alt="postgres.png" class="img-thumbnail" width="20%" />
-								</li>
-							</ul>
-
-							<ul class="d-flex list-unstyled mt-auto">
-								<li class="me-auto">
-									<a href="" class="btn btn-sm btn-primary"><i data-feather="eye" style="color: #f2f3f5"></i> Demo</a>
-								</li>
-								<li class="d-flex align-items-center">
 									<a
-										href="https://github.com/salmaqnsGH/crowdfunding-app-be"
-										style="margin-left: 10px; text-decoration: none; font-weight: 600">
-										<i data-feather="github" style="color: #f2f3f5" width="32px" height="32px"></i>
+									type="button" class="btn btn-sm btn-primary"
+									href="https://github.com/salmaqnsGH/crowdfunding-app-be"
+										style="text-decoration: none; font-weight: 600; ">
+										<i data-feather="eye" ></i> Docs
 									</a>
-								</li>
-								<li class="d-flex align-items-center">
-									<svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3" /></svg>
-									<small>3d</small>
 								</li>
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div>	
 				<div class="col">
-					<div
-						class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-						style="background-image: url('cover-11.png')">
-						<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Todo List App API</h3>
+					<div class="card">
+						<div class="card-header">
+						<h4>Todo List App API</h4>
+						</div>
+						<div class="card-body">
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<img src="golang.png" alt="golang.png" class="img-thumbnail" width="10%" />
+									<img src="mysql.png" alt="mysql.png" class="img-thumbnail" width="12%" />
+								</li>
+							</ul>
 							<p>
 								This is an API for a Todo List App built using Golang and MySQL, which is designed to provide a simple,
 								efficient and easy-to-use interface for creating, retrieving, updating and deleting tasks
 							</p>
 							<ul class="d-flex list-unstyled mt-auto">
 								<li class="me-auto">
-									<img src="golang.png" alt="golang.png" class="img-thumbnail" width="12%" />
-									<img src="mysql.png" alt="mysql.png" class="img-thumbnail" width="15%" />
-								</li>
-							</ul>
-
-							<ul class="d-flex list-unstyled mt-auto">
-								<li class="me-auto">
-									<a href="" class="btn btn-sm btn-primary"><i data-feather="eye" style="color: #f2f3f5"></i> Demo</a>
-								</li>
-								<li class="d-flex align-items-center">
 									<a
-										href="https://github.com/salmaqnsGH/crowdfunding-app-be"
-										style="margin-left: 10px; text-decoration: none; font-weight: 600">
-										<i data-feather="github" style="color: #f2f3f5" width="32px" height="32px"></i>
+									type="button" class="btn btn-sm btn-primary"
+									href="https://github.com/salmaqnsGH/todo-list"
+										style="text-decoration: none; font-weight: 600; ">
+										<i data-feather="eye" ></i> Docs
 									</a>
-								</li>
-								<li class="d-flex align-items-center">
-									<svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3" /></svg>
-									<small>3d</small>
 								</li>
 							</ul>
 						</div>
@@ -267,17 +248,17 @@
 			<footer class="align-items-center py-3 my-4 border-top">
 				<ul class="nav col align-item-center justify-content-center list-unstyled">
 					<li class="ms-3">
-						<a class="text-muted" href="#">
+						<a class="text-muted" href="mailto: nurussalamahqonaah@gmail.com">
 							<i data-feather="mail"></i>
 						</a>
 					</li>
 					<li class="ms-3">
-						<a class="text-muted" href="#">
+						<a class="text-muted" href="https://www.linkedin.com/in/nurussalamah">
 							<i data-feather="linkedin"></i>
 						</a>
 					</li>
 					<li class="ms-3">
-						<a class="text-muted" href="#">
+						<a class="text-muted" href="https://www.github.com/salmaqnsGH">
 							<i data-feather="github"></i>
 						</a>
 					</li>
