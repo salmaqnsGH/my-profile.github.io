@@ -4,17 +4,17 @@ body {
 
 .big-heading {
 	font-weight: 600;
-	font-size: clamp(30px, 8vw, 70px);
+	font-size: clamp(30px, 8vw, 60px);
 	color: #45505b;
 }
 
 .sub-heading-1 {
-	font-size: clamp(24px, 8vw, 60px);
+	font-size: clamp(24px, 8vw, 50px);
 	color: #45505b;
 }
 
 .sub-heading-2 {
-	font-size: clamp(24px, 8vw, 60px);
+	font-size: clamp(24px, 8vw, 50px);
 	color: #0563bb;
 }
 
