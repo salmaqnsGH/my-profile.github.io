@@ -27,23 +27,13 @@
 	</head>
 	<body>
 		<!-- Navbar start -->
-		<nav class="navbar position-fixed" style="top: 50%; left: 25px; transform: translateY(-50%)">
+		<nav class="navbar position-fixed" style="top: 50%; left: 25px; transform: translateY(-50%); z-index: 100;">
 			<ul class="list-unstyled">
 				<li>
 					<a href="#hero" class="circle-icon" title="Home" onmouseover="hoverIn(this)" onmouseout="hoverOut(this)">
 						<i id="Home" class="feather nav-home" data-feather="home"></i>
 					</a>
 				</li>
-				<!-- <li>
-					<a
-						href="#about"
-						class="circle-icon mt-4"
-						title="About"
-						onmouseover="hoverIn(this)"
-						onmouseout="hoverOut(this)">
-						<i id="About" class="feather nav-about" data-feather="user"></i>
-					</a>
-				</li> -->
 				<li>
 					<a
 						href="#portfolios"
@@ -52,6 +42,16 @@
 						onmouseover="hoverIn(this)"
 						onmouseout="hoverOut(this)">
 						<i id="Portfolios" class="feather nav-portfolio" data-feather="book"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						href="#resume"
+						class="circle-icon mt-4"
+						title="Resume"
+						onmouseover="hoverIn(this)"
+						onmouseout="hoverOut(this)">
+						<i id="Resume" class="feather nav-resume" data-feather="grid"></i>
 					</a>
 				</li>
 				<li>
@@ -74,165 +74,58 @@
 		<!-- /Navbar end -->
 
 		<!-- Hero section -->
-		<div id="hero" class="container col-xl-10 col-xxl-8 px-4 py-5">
-			<div class="row align-items-center g-lg-5 py-5">
-				<div class="col-lg-8 text-center text-lg-start">
-					<h1 class="big-heading">Qona'ah Nurussalamah</h1>
-					<p class="col-lg-10 sub-heading-1">
-						I'm <span class="typed sub-heading-2" data-typed-items="Web Developer., Backend-Engineer."></span> |
-					</p>
-					<div class="mb-3">
-						<a href="mailto: nurussalamahqonaah@gmail.com">
-							<i data-feather="mail" style="color: #db4437" width="32px" height="32px"></i>
-						</a>
-						<a href="https://www.linkedin.com/in/nurussalamah" style="margin-left: 10px">
-							<i data-feather="linkedin" style="color: #0e76a8" width="32px" height="32px"></i>
-						</a>
-						<a href="https://www.github.com/salmaqnsGH" style="margin-left: 10px">
-							<i data-feather="github" style="color: #181717" width="32px" height="32px"></i>
-						</a>
+		<section id="hero" class="hero">
+			<div id="hero" class="container col-xl-10 col-xxl-8 px-4 py-5">
+				<div class="row align-items-center g-lg-5 py-5">
+					<div class="col-lg-8 text-center text-lg-start">
+						<h1 class="big-heading">Qona'ah Nurussalamah</h1>
+						<p class="col-lg-10 sub-heading-1">
+							I'm <span class="typed sub-heading-2" data-typed-items="Web Developer., Backend-Engineer."></span> |
+						</p>
+						<div class="mb-3">
+							<a href="mailto: nurussalamahqonaah@gmail.com">
+								<i data-feather="mail" style="color: #db4437" width="32px" height="32px"></i>
+							</a>
+							<a href="https://www.linkedin.com/in/nurussalamah" style="margin-left: 10px">
+								<i data-feather="linkedin" style="color: #0e76a8" width="32px" height="32px"></i>
+							</a>
+							<a href="https://www.github.com/salmaqnsGH" style="margin-left: 10px">
+								<i data-feather="github" style="color: #181717" width="32px" height="32px"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-10 mx-auto col-lg-4 d-flex justify-content-center">
+						<img src="assets/cat.webp" alt="" style="width: 80%" />
 					</div>
 				</div>
-				<div class="col-md-10 mx-auto col-lg-4 d-flex justify-content-center">
-					<img src="assets/cat.webp" alt="" style="width: 80%" />
-				</div>
 			</div>
-		</div>
+		</section>
 		<!-- /Hero section end -->
-		<!-- <hr /> -->
-		<!-- About section -->
-		<!-- <div id="about" class="container col-xl-10 col-xxl-8 px-4 py-5">
-			<div class="row align-items-center g-lg-5 py-5">
-				<div class="px-4 py-5 my-5 text-center">
-					<img src="assets/cat.webp" alt="" style="width: 10%; border-radius: 50%; border-width: 1px" />
-					<h1 class="sub-heading-1 my-5">About Me</h1>
-					<p class="paragraph">
-						Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web
-						development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking
-						together a custom reblog button taught me a lot about HTML & CSS! Fast-forward to today, and I’ve had the
-						privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design
-						studio. My main focus these days is building accessible, inclusive products and digital experiences at
-						Upstatement for a variety of clients. I also recently launched a course that covers everything you need to
-						build a web app with the Spotify API using Node & React. Here are a few technologies I’ve been working with
-						recently:
-					</p>
-				</div>
-			</div>
-		</div> -->
-		<!-- /About section end -->
-		<!-- <hr /> -->
 
 		<!-- Portfolio -->
-		<div class="container px-4 py-5" id="custom-cards">
-			<h2 id="portfolios" class="pb-2 border-bottom">Portfolios</h2>
-
-			<div class="row my-3">
-				<div class="col-sm-6 mb-3 mb-sm-0 text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/dts.png');background-size: cover;
-				background-position: center center;">
+		<section id="portfolios" class="portfolios">
+			<div class="container px-4" id="custom-cards">
+				<div class="section-title">
+					<h2 id="portfolios">Portfolios</h2>
+					<!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
 				</div>
-				<div class="col-sm-6">
-					<div class="px-5">
-						<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">MyGram API</h3>
-						<p>
-							As my final project for DTS Kominfo FGA, I developed an Instagram clone API that enables users to upload photos and comment on other users' photos. The tech stack I used includes Go, PostgreSQL, Gin Gonic, and Gorm ORM.
-						</p>
-						<ul class="d-flex list-unstyled mt-auto">
-							<li class="me-auto">
-								<a
-								type="button" class="btn btn-outline-secondary"
-									href="https://github.com/salmaqnsGH/my-gram"
-									style="text-decoration: none; font-weight: 600; ">
-									<i data-feather="github"  width="32px" height="32px"></i> Docs
-								</a>
-							</li>
-						</ul>
+				<div class="row my-3">
+					<div class="col-sm-6 mb-3 mb-sm-0 text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/seribu.png');background-size: cover;
+					background-position: center center;">
 					</div>
-				</div>
-			</div>
-			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-				<div class="col">
-					<div class="card">
-						<div class="card-header">
-							<h4>
-								Topup Game Admin App & API
-							</h4>
-						</div>
-						<div class="card-body">
-							<ul class="d-flex list-unstyled mt-auto">
-								<li class="me-auto">
-									<img src="assets/nodejs.png" alt="nodejs.png" class="img-thumbnail" width="13%" />
-									<img src="assets/mongodb.png" alt="mongodb.png" class="img-thumbnail" width="24%" />
-								</li>
-							</ul>
+					<div class="col-sm-6">
+						<div class="px-5">
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">1000 Startup API</h3>
 							<p>
-								Backend project supports a top-up game app and its admin dashboard. Implemented JWT for authentication and authorization, ensuring secure access to our application. It integrates with MongoDB to store
-								user and game data.
+								Develop robust and efficient APIs to power the mobile application, web application and a Content Management System (CMS), ensuring seamless data flow and optimal performance.
 							</p>
 							<ul class="d-flex list-unstyled mt-auto">
 								<li class="me-auto">
-									<a
+									<a target="_blank"
 									type="button" class="btn btn-sm btn-primary"
-										href="https://github.com/salmaqnsGH/topup-game-be"
+										href="https://1000startupdigital.id"
 										style="text-decoration: none; font-weight: 600; ">
-										<i data-feather="eye" ></i> Docs
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card">
-						<div class="card-header">
-						<h4>Crowdfunding App API</h4>
-						</div>
-						<div class="card-body">
-							<ul class="d-flex list-unstyled mt-auto">
-								<li class="me-auto">
-									<img src="assets/golang.png" alt="golang.png" class="img-thumbnail" width="10%" />
-									<img src="assets/postgres.png" alt="postgres.png" class="img-thumbnail" width="16%" />
-								</li>
-							</ul>
-							<p>
-								A Crowdfunding App built with Golang and Postgres, featuring a robust REST API and secure payment
-								gateway powered by Midtrans. Ideal for creating and managing successful fundraising campaigns
-							</p>
-							<ul class="d-flex list-unstyled mt-auto">
-								<li class="me-auto">
-									<a
-									type="button" class="btn btn-sm btn-primary"
-									href="https://github.com/salmaqnsGH/crowdfunding-app-be"
-										style="text-decoration: none; font-weight: 600; ">
-										<i data-feather="eye" ></i> Docs
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>	
-				<div class="col">
-					<div class="card">
-						<div class="card-header">
-						<h4>Todo List App API</h4>
-						</div>
-						<div class="card-body">
-							<ul class="d-flex list-unstyled mt-auto">
-								<li class="me-auto">
-									<img src="assets/golang.png" alt="golang.png" class="img-thumbnail" width="10%" />
-									<img src="assets/mysql.png" alt="mysql.png" class="img-thumbnail" width="12%" />
-								</li>
-							</ul>
-							<p>
-								This is an API for a Todo List App built using Golang and MySQL, which is designed to provide a simple,
-								efficient and easy-to-use interface for creating, retrieving, updating and deleting tasks.
-							</p>
-							<ul class="d-flex list-unstyled mt-auto">
-								<li class="me-auto">
-									<a
-									type="button" class="btn btn-sm btn-primary"
-									href="https://github.com/salmaqnsGH/todo-list"
-										style="text-decoration: none; font-weight: 600; ">
-										<i data-feather="eye" ></i> Docs
+										<i data-feather="globe"  width="32px" height="26px"></i> Web
 									</a>
 								</li>
 							</ul>
@@ -240,8 +133,244 @@
 					</div>
 				</div>
 			</div>
-		</div>
+			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+				<div class="container px-4" id="custom-cards">
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="2000">
+							<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+								<div class="col">
+									<div class="card">
+										<div class="card-header">
+											<h4>
+												Literasi Digital
+											</h4>
+										</div>
+										<div class="card-body">
+											<ul class="d-flex list-unstyled mt-auto">
+												<li class="me-auto">
+													<img src="assets/golang.png" alt="golang.png" class="img-thumbnail" width="10%" />
+													<img src="assets/postgres.png" alt="postgres.png" class="img-thumbnail" width="16%" />
+												</li>
+											</ul>
+											<p>
+												Develop a robust backend infrastructure for the "Literasi Digital" project, aimed at enhancing digital literacy through a mobile interface.
+											</p>
+											<ul class="d-flex list-unstyled mt-auto">
+												<li class="me-auto">
+													<a target="_blank"
+													type="button" class="btn btn-sm btn-primary"
+														href="https://literasidigital.id"
+														style="text-decoration: none; font-weight: 600; ">
+														<i data-feather="globe" ></i> Web
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card">
+										<div class="card-header">
+											<h4>
+												MyGram API
+											</h4>
+										</div>
+										<div class="card-body">
+											<ul class="d-flex list-unstyled mt-auto">
+												<li class="me-auto">
+													<img src="assets/golang.png" alt="golang.png" class="img-thumbnail" width="10%" />
+													<img src="assets/postgres.png" alt="postgres.png" class="img-thumbnail" width="16%" />
+												</li>
+											</ul>
+											<p>
+												As my final project for DTS Kominfo FGA, I developed an Instagram clone API that enables users to upload photos and comment on other users' photos. The tech stack I used includes Go, PostgreSQL, Gin Gonic, and Gorm ORM.
+											</p>
+											<ul class="d-flex list-unstyled mt-auto">
+												<li class="me-auto">
+													<a target="_blank"
+													type="button" class="btn btn-sm btn-outline-secondary"
+														href="https://github.com/salmaqnsGH/my-gram"
+														style="text-decoration: none; font-weight: 600; ">
+														<i data-feather="github" ></i> Docs
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card">
+										<div class="card-header">
+											<h4>
+												Topup Game Admin App & API
+											</h4>
+										</div>
+										<div class="card-body">
+											<ul class="d-flex list-unstyled mt-auto">
+												<li class="me-auto">
+													<img src="assets/nodejs.png" alt="nodejs.png" class="img-thumbnail" width="13%" />
+													<img src="assets/mongodb.png" alt="mongodb.png" class="img-thumbnail" width="24%" />
+												</li>
+											</ul>
+											<p>
+												Backend project supports a top-up game app and its admin dashboard. Implemented JWT for authentication and authorization, ensuring secure access to our application. It integrates with MongoDB to store
+												user and game data.
+											</p>
+											<ul class="d-flex list-unstyled mt-auto">
+												<li class="me-auto">
+													<a target="_blank"
+													type="button" class="btn btn-sm btn-outline-secondary"
+														href="https://github.com/salmaqnsGH/topup-game-be"
+														style="text-decoration: none; font-weight: 600; ">
+														<i data-feather="github" ></i> Docs
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" data-bs-interval="5000">
+							<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+								<div class="col">
+									<div class="card">
+										<div class="card-header">
+										<h4>Crowdfunding App API</h4>
+										</div>
+										<div class="card-body">
+											<ul class="d-flex list-unstyled mt-auto">
+												<li class="me-auto">
+													<img src="assets/golang.png" alt="golang.png" class="img-thumbnail" width="10%" />
+													<img src="assets/postgres.png" alt="postgres.png" class="img-thumbnail" width="16%" />
+												</li>
+											</ul>
+											<p>
+												A Crowdfunding App built with Golang and Postgres, featuring a robust REST API and secure payment
+												gateway powered by Midtrans. Ideal for creating and managing successful fundraising campaigns
+											</p>
+											<ul class="d-flex list-unstyled mt-auto">
+												<li class="me-auto">
+													<a target="_blank"
+													type="button" class="btn btn-sm btn-outline-secondary"
+													href="https://github.com/salmaqnsGH/crowdfunding-app-be"
+														style="text-decoration: none; font-weight: 600; ">
+														<i data-feather="github" ></i> Docs
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card">
+										<div class="card-header">
+										<h4>Todo List App API</h4>
+										</div>
+										<div class="card-body">
+											<ul class="d-flex list-unstyled mt-auto">
+												<li class="me-auto">
+													<img src="assets/golang.png" alt="golang.png" class="img-thumbnail" width="10%" />
+													<img src="assets/mysql.png" alt="mysql.png" class="img-thumbnail" width="12%" />
+												</li>
+											</ul>
+											<p>
+												This is an API for a Todo List App built using Golang and MySQL, which is designed to provide a simple,
+												efficient and easy-to-use interface for creating, retrieving, updating and deleting tasks.
+											</p>
+											<ul class="d-flex list-unstyled mt-auto">
+												<li class="me-auto">
+													<a target="_blank"
+													type="button" class="btn btn-sm btn-outline-secondary"
+													href="https://github.com/salmaqnsGH/todo-list"
+														style="text-decoration: none; font-weight: 600; ">
+														<i data-feather="github" ></i> Docs
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
 		<!-- /Portfolio end -->
+
+		<!-- ======= Resume Section ======= -->
+		<section id="resume" class="resume">
+			<div class="container" data-aos="fade-up">
+				<div class="section-title">
+					<h2 id="resume">Resume</h2>
+					<!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3 class="resume-title">Professional Experience</h3>
+						<div class="resume-item">
+							<h4>Backend Developer</h4>
+							<h5>Jun 2023 - Dec 2023</h5>
+							<p><em>PT Tekno Gemilang Indonesia (TOGI), Bandung</em></p>
+							<ul>
+								<li>Developed and maintained software on the backend</li>
+								<li>Utilized database solutions and caching</li>
+								<li>Collaborated with cross-functional teams to deliver high-quality products on time</li>
+								<li>Efficiently troubleshooted and resolved issues to ensure minimal service disruption</li>
+								<li>Actively contributed to API testing, ensuring compliance with standards based on HTTP response status codes</li>
+							</ul>
+							<p><b><em>Tools and Technologies: Go, PostgreSQL, Redis</em></b></p>
+						</div>
+						<div class="resume-item">
+							<h4>Web Developer</h4>
+							<h5>Dec 2021 - Jul 2022</h5>
+							<p><em>Afifah Skincare, Ngawi </em></p>
+							<ul>
+								<li>Built an inventory application to manage product distribution from the central area to sub-distribution area using PHP, Javascript, and Firebird SQL</li>
+							</ul>
+							<p><b><em>Tools and Technologies: PHP, FirebirdSQL</em></b></p>
+						</div>
+						<div class="resume-item">
+							<h4>Web Developer Intern</h4>
+							<h5>Jan 2021 - Jul 2021</h5>
+							<p><em>Al Firdaus Foundation, Surakarta</em></p>
+							<ul>
+								<li>Developed a system to document students' achievements that can be monitored by teachers, parents, and headmaster</li>
+								<li>Developed a system to create and distribute assignments for students and teachers that can be monitored by parents</li>
+								<li>Recommended and consulted with clients on the most appropriate graphic design</li>
+								<li>Developed a system for new student registration that integrates with other internal applications by creating REST API</li>
+							</ul>
+							<p><b><em>Tools and Technologies: PHP, CodeIgniter, NodeJS, MongoDB</em></b></p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<h3 class="resume-title">Education</h3>
+						<div class="resume-item">
+							<h4>Bachelor of Computer Science</h4>
+							<h5>2023 - 2025</h5>
+							<p><em>Bina Nusantara University (BINUS), Jakarta</em></p>
+							<!-- <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p> -->
+						</div>
+						<div class="resume-item">
+							<h4>D3 Teknik Informatika</h4>
+							<h5>2018 - 2021</h5>
+							<p><em>Sebelas Maret University (UNS), Surakarta</em></p>
+							<!-- <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Resume Section -->
 
 		<!-- Footer -->
 		<div id="contact" class="container">
