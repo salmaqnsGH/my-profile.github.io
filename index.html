@@ -41,7 +41,7 @@
 						title="Portfolios"
 						onmouseover="hoverIn(this)"
 						onmouseout="hoverOut(this)">
-						<i id="Portfolios" class="feather nav-portfolio" data-feather="book"></i>
+						<i id="Portfolios" class="feather nav-portfolio" data-feather="grid"></i>
 					</a>
 				</li>
 				<li>
@@ -51,7 +51,17 @@
 						title="Resume"
 						onmouseover="hoverIn(this)"
 						onmouseout="hoverOut(this)">
-						<i id="Resume" class="feather nav-resume" data-feather="grid"></i>
+						<i id="Resume" class="feather nav-resume" data-feather="file-text"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						href="#certificates"
+						class="circle-icon mt-4"
+						title="Certificates"
+						onmouseover="hoverIn(this)"
+						onmouseout="hoverOut(this)">
+						<i id="Certificates" class="feather nav-certificates" data-feather="file"></i>
 					</a>
 				</li>
 				<li>
@@ -137,10 +147,10 @@
 					</div>
 				</div>
 			</div>
-			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+			<div id="carouselPortfolios" class="carousel carousel-dark slide" data-bs-ride="carousel">
 				<div class="container px-4" id="custom-cards">
 					<div class="carousel-inner">
-						<div class="carousel-item active" data-bs-interval="2000">
+						<div class="carousel-item active" data-bs-interval="3000">
 							<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 d-flex">
 								<div class="col d-flex">
 									<div class="card flex-grow-1">
@@ -299,11 +309,11 @@
 						</div>
 					</div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolios" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolios" data-bs-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 				</button>
@@ -391,6 +401,133 @@
 			</div>
 		</section>
 		<!-- End Resume Section -->
+
+		<!-- space devider -->
+		<div class="pb-5"></div>
+		<!-- end space devider -->
+
+		<!-- Certificates -->
+		<section id="certificates" class="certificates">
+			<div class="container px-4" id="custom-cards">
+				<div class="section-title">
+					<h2 id="certificates">Certificates</h2>
+				</div>
+			</div>
+			<div id="carouselCertificates" class="carousel carousel-dark slide" data-bs-ride="carousel">
+				<div class="container px-4" id="custom-cards">
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="3000">
+							<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 d-flex">
+								<!-- Certificate 1 -->
+								<div class="col d-flex">
+									<a target="_blank" href="https://drive.google.com/file/d/1kb4rG5aVyNaJD6DFjRgjqGpr0Q-YDMlm/view?usp=sharing" class="card-link">
+										<div class="card h-100 shadow-sm card-hover">
+											<img src="assets/go_fga_kominfo.png" class="card-img-top" alt="Hackerrank SQL Basic Certificate">
+											<div class="card-body">
+												<h5 class="card-title">Scalable Web Service with Golang</h5>
+												<p class="card-text">Learning basic Go programming, its implementation, and its workflow. Introduced to Microservices in Go, laying the foundation for Go developers. Acquainting with key testing methodologies, emphasizing unit testing, and leveraging the 'testify' Go package.</p>
+											</div>
+											<div class="card-overlay"></div>
+										</div>
+									</a>
+								</div>
+								<!-- Certificate 2 -->
+								<div class="col d-flex">
+									<a target="_blank" href="https://www.hackerrank.com/certificates/01b60ec0f4c0" class="card-link">
+										<div class="card h-100 shadow-sm card-hover">
+											<img src="assets/sql_intermediate_certificate.png" class="card-img-top" alt="Hackerrank SQL Basic Certificate">
+											<div class="card-body">
+												<h5 class="card-title">Hackerrank SQL (Intermediate)</h5>
+												<p class="card-text">It covers intermediate SQL queries including:</p>
+												<div class="mb-2">
+													<span class="badge bg-secondary">complex joins</span>
+													<span class="badge bg-secondary">unions</span>
+													<span class="badge bg-secondary">sub-queries</span>
+												</div>
+											</div>
+											<div class="card-overlay"></div>
+										</div>
+									</a>
+								</div>
+								<!-- Certificate 3 -->
+								<div class="col d-flex">
+									<a target="_blank" href="https://www.hackerrank.com/certificates/42e1284f41fb" class="card-link">
+										<div class="card h-100 shadow-sm card-hover">
+											<img src="assets/sql_basic_certificate.png" class="card-img-top" alt="Hackerrank SQL Basic Certificate">
+											<div class="card-body">
+												<h5 class="card-title">SQL (Basic)</h5>
+												<p class="card-text">It covers basic SQL queries including:</p>
+												<div class="mb-2">
+													<span class="badge bg-secondary">Simple Queries</span>
+													<span class="badge bg-secondary">Relationships</span>
+													<span class="badge bg-secondary">Aggregators</span>
+												</div>
+											</div>
+											<div class="card-overlay"></div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" data-bs-interval="5000">
+							<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 d-flex">
+								<!-- Certificate 4 -->
+								<div class="col d-flex">
+									<a target="_blank" href="https://www.hackerrank.com/certificates/799bd51633c0" class="card-link">
+										<div class="card h-100 shadow-sm card-hover">
+											<img src="assets/go_basic_certificate.png" class="card-img-top" alt="Hackerrank SQL Basic Certificate">
+											<div class="card-body">
+												<h5 class="card-title">Hackerrank Go (Basic)</h5>
+												<p class="card-text">It covers basic language features of Golang including:</p>
+												<div class="mb-2">
+													<span class="badge bg-secondary">simple data structures</span>
+													<span class="badge bg-secondary">arrays</span>
+													<span class="badge bg-secondary">maps</span>
+													<span class="badge bg-secondary">data types</span>
+													<span class="badge bg-secondary">interfaces</span>
+												</div>
+											</div>
+											<div class="card-overlay"></div>
+										</div>
+									</a>
+								</div>
+								<!-- Certificate 5 -->
+								<div class="col d-flex">
+									<a target="_blank" href="https://drive.google.com/file/d/1IrZG6Q5Z1VKuWj_AKt4IxFNlVhx8BYJd/view" class="card-link">
+										<div class="card h-100 shadow-sm card-hover">
+											<img src="assets/leetcode_sql_50.png" class="card-img-top" alt="Hackerrank SQL Basic Certificate">
+											<div class="card-body">
+												<h5 class="card-title">Leetcode SQL 50</h5>
+												<p class="card-text">It covers SQL topics including:</p>
+												<div class="mb-2">
+													<span class="badge bg-secondary">Select</span>
+													<span class="badge bg-secondary">Basic Joins</span>
+													<span class="badge bg-secondary">Basic Aggregate Functions</span>
+													<span class="badge bg-secondary">Sorting and Grouping</span>
+													<span class="badge bg-secondary">Advanced Select and Joins</span>
+													<span class="badge bg-secondary">Subqueries</span>
+													<span class="badge bg-secondary">Advanced String Functions / Regex / Clause</span>
+												</div>
+											</div>
+											<div class="card-overlay"></div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselCertificates" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselCertificates" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
+		<!-- Certificates end -->
 
 		<!-- Footer -->
 		<div id="contact" class="container">

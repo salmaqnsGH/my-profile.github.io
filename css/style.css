@@ -8,6 +8,43 @@ body {
 	color: #45505b;
 }
 
+.card-hover {
+    position: relative;
+    transition: transform 0.3s;
+}
+
+/* card for certificates */
+.card-hover:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+} 
+
+.card-hover:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;  
+}
+
+.card-link:hover {
+    text-decoration: none;
+}
+
 .sub-heading-1 {
 	font-size: clamp(24px, 8vw, 50px);
 	color: #45505b;
